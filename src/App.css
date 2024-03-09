@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.container {
+  max-width: 1280px;
+  width: 100%;
+  margin-top: 1em;
+}
+
+
+
+
+/* footer section start */
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5em;
+}
+
+.newsletter {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  flex-direction: column;
+  background-color: #191919;
+  position: relative;
+}
+
+.newsletter h1 {
+  text-align: center;
+  margin-top: 2em;
+  background-color: transparent;
+  color: white;
+}
+
+#subscription {
+  margin-top: 0.5em;
+  width: 30%;
+  height: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background-color: transparent;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.newsletter button {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px rgb(0, 0, 0) solid;
+  font-size: 25px;
+  font-weight: bold;
+  outline: none;
+  margin-top: 1em;
+  background-color: whitesmoke;
+}
+
+.copyright {
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright ul {
+  background-color: transparent;
+}
+
+.copyright ul li {
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+  list-style-type: none;
+  text-decoration: none;
+  cursor: default;
+}
+
+/* footer section end */

@@ -1,0 +1,123 @@
+.shopping-cart {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.shopping-cart h2 {
+  background-color: transparent;
+  margin-top: 2em;
+}
+
+
+.total-items {
+    width: 65%;
+    min-height: 100vh;
+    margin-top: 2em;
+}
+
+.total-items-wrapper {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 1rem;
+}
+
+.total-items-image {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-items-image img {
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.total-items-product{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.total-items-name {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 0.5em;
+}
+.total-items-price {
+    font-size: 23px;
+}
+
+.total-items-button {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.remove-cart{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    background-color: grey;
+}
+
+.quantity-button {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.quantity-button button {
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    outline: none;
+}
+
+.total-shop {
+    width: 65%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.total-shop h2 {
+    font-size: 35px;
+}
+
+.total-shop button {
+    width: 30%;
+    height: 50px;
+    font-size: 25px;
+    border: 1px solid red;
+    background-color: red;
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
