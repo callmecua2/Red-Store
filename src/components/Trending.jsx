@@ -39,7 +39,7 @@ const Trending = () => {
         {filteredItems.map((item) => {
           return (
             <div key={item.id}>
-              <Link to={`/categories/product/${item.id}`}>
+              <Link onClick={()=>window.top(0, 0)} to={`/categories/product/${item.id}`}>
                 <div className="product-carousel-slider">
                   <img src={item.IMG} />
                   <h3 id="nameofProduct">{item.product}</h3>

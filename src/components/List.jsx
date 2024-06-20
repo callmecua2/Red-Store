@@ -12,7 +12,7 @@ const List = () => {
         {filterItems.map((item) => {
           return (
             <div className="lists-items" key={item.id}>
-              <Link to={`categories/product/${item.id}`}>
+              <Link onClick={()=> window.top(0, 0)} to={`categories/product/${item.id}`}>
                 <div className="top-list">
                     <img src={item.IMG} alt="image" />
                     <h3 className="product">{item.product}</h3>

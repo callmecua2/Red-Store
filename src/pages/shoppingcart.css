@@ -11,10 +11,22 @@
   margin-top: 2em;
 }
 
+.cart-empty {
+    width: 30%;
+    height: 30vh;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+
 
 .total-items {
     width: 65%;
-    min-height: 100vh;
+    min-height: 30vh;
     margin-top: 2em;
 }
 

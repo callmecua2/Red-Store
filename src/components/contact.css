@@ -1,0 +1,125 @@
+.profile{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile img{
+    width: 200px;
+    height: 200px;
+    border-radius: 37% 63% 23% 77% / 70% 37% 63% 30%;
+    animation-name: changeBorderRadius;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes changeBorderRadius{
+    0%{
+        border-radius: 37% 63% 23% 77% / 70% 37% 63% 30%;
+    }
+    25%{
+        border-radius: 69% 31% 53% 47% / 70% 41% 59% 30%;
+    }
+    75%{
+        border-radius: 34% 66% 39% 61% / 40% 62% 38% 60%;
+    }
+    100%{
+        border-radius: 37% 63% 23% 77% / 70% 37% 63% 30%;
+    }
+}
+
+.introduction{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    cursor: default;
+    background-color: green;
+}
+
+.greet{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#greet{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+#greet:hover{
+    transition: 1s;
+    color: #f9004d;
+    border-radius: 5px;
+}
+
+.myFocus{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    cursor: default;
+}
+.focus-greet{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+
+.alpha{
+    color: black;
+}
+
+.active{
+    color: aqua;
+}
+
+  
+.alpha.animated{
+    animation: ani 0.7s ease-in-out 1;
+}
+  
+  @keyframes ani {
+    0%{
+      transform: scale(1.2,0.5);
+    }
+    16%{
+      transform: scale(1.2,0.5);
+    }
+    25%{
+      transform: scale(1.2,0.5);
+    }
+    32%{
+      transform: scale(0.8,1.1);
+    }
+    48%{
+      transform: scale(0.95,1);
+    }
+    64%{
+      transform: scale(0.8,1.2);
+    }
+    80%{
+      transform: scale(1.15,1);
+    }
+    87%{
+      transform: scale(1.15,1);
+    }
+    90%{
+      /* This will add the shaking effect one time almost at the end   */
+      transform: scale(0.8,1);
+    }
+    95%{
+      transform: scale(1.05,1);
+    }
+    100%{
+      transform: scale(1,1);
+    }
+  }
+
+.greetings{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    font-size: 30px;
+}

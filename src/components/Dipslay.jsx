@@ -29,7 +29,7 @@ const Display = () => {
         </Link>
       </div>
       <div className="featured grid-four">
-        <Link to={"categories/electronics"}>
+        <Link onClick={()=> window.top(0, 0)} to={"categories/electronics"}>
           <div className="overlay">
             <img src="/src/img/main/electronics.jpg" alt="image" />
             <p>Electronics</p>

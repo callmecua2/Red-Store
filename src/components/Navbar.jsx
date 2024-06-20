@@ -41,8 +41,8 @@ const Navbar = () => {
           <li onClick={()=>navigate('/')}>Home</li>
           <li onClick={()=>navigate('/categories/all')}>Categories</li>
           <li onClick={()=>navigate('/categories/product/5')}>Product Page</li>
-          <li onClick={()=>navigate('/categories')}>Contact</li>
-          <li onClick={()=>navigate('/categories/product/5')}>Account</li>
+          {/* <li onClick={()=>navigate('/contact')}>Contact</li>
+          <li onClick={()=>navigate('/categories/product/5')}>Account</li> */}
         </ul>
       </nav>
       <div className="nav-bag" onClick={()=>navigate('/mycart')}>

@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Categories from './pages/Categories'
+// import Contact from './components/Contact'
 import Footer from './components/Footer'
 import All from './components/pages-components/All'
 import Furniturespages from './components/pages-components/Furniturespages'
@@ -24,23 +25,24 @@ function App() {
   const addToCart = (items) => { 
     setCartItem((cartItem) => [...cartItem, items])
     console.log(cartItem)
-    // alert("added to cart")
   }
   
 
   
-  useEffect(()=>{
-    const json = localStorage.getItem('carItem');
+  useEffect(() => {
+    const json = localStorage.getItem("cartItem");
     const savedCart = JSON.parse(json);
-    if(savedCart) {
-      setCartItem(savedCart)
+    if (savedCart) {
+      setCartItem(savedCart);
+    }
+  }, []);
+
+  useEffect(() => {
+    const json = JSON.stringify(cartItem);
+    if(cartItem.length >= 1) {
+      localStorage.setItem("cartItem", json);
     }
   }, [cartItem]);
-
-  useEffect(()=> {
-    const json = JSON.stringify(cartItem);
-    localStorage.setItem("cartItem", json);
-  }, [cartItem])
 
 
   return (
@@ -59,6 +61,7 @@ function App() {
               <Route path='skincare' element={<Skincarepages />}/>
             </Route>
             <Route path='/categories/product/:id' element={<Productpage />} />
+            {/* <Route path='/contact' element={<Contact />}/> */}
             <Route path='/mycart' element={<ShoppingCart />} />
           </Routes>
         </Router>
