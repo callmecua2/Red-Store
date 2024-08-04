@@ -27,8 +27,6 @@ function App() {
     console.log(cartItem)
   }
   
-
-  
   useEffect(() => {
     const json = localStorage.getItem("cartItem");
     const savedCart = JSON.parse(json);

@@ -12,9 +12,9 @@
 }
 
 .cart-empty {
-    width: 30%;
+    width: 50%;
     height: 30vh;
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     display: flex;
     justify-content: center;
@@ -22,6 +22,18 @@
     font-size: 25px;
 }
 
+.empty-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.empty-box img{
+    width: 40%;
+    height: auto;
+}
 
 
 .total-items {

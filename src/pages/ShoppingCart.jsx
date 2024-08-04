@@ -1,10 +1,11 @@
 import { useContext, useEffect, useState } from "react";
 import "./shoppingcart.css";
 import { CartContext } from "./ProductPage";
-
+import emptyimg from "../img/icons/emptyimg.png"
 const ShoppingCart = () => {
   const { cartItem, setCartItem } = useContext(CartContext);
   const [totalItem, setTotalItem] = useState(cartItem.length);
+  
 
   // const handleAdd = (productName, price) => {
   //   const filterProduct = cartItem.filter((item) => item.id === productName)
@@ -144,6 +145,7 @@ const ShoppingCart = () => {
       <div className="cart-empty">
           <div className="empty-box">
             <p className="text-cart">Your cart is empty</p>
+            <img src={emptyimg} alt="" />
           </div>
         </div>
     )
@@ -165,10 +167,7 @@ const ShoppingCart = () => {
   return (
     <div className="container">
       <div className="shopping-cart">
-        <h2>My Shopping Cart</h2>
-
         {emptyCart}
-
         <div className="total-shop">
           <h2>Total Items : {totalItem} </h2>
           <button>Buy Now</button>
